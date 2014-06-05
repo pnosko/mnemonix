@@ -16,7 +16,7 @@ class Main extends SActivity {
       prefs.batchSize = 10
       prefs.intervalMillis = 3000
 
-      showHelpOnFirstUse
+      showHelp
     }
   }
 
@@ -37,22 +37,22 @@ class Main extends SActivity {
     }
   }
 
-  def showHelpOnFirstUse {
-
+  def showHelp {
+    startActivity[ShowHelp]
   }
 
   onCreate {
     contentView = new SVerticalLayout {
       SButton(R.string.start_batch, { startActivity[RunBatch] })
       SButton(R.string.settings)
-      SButton(R.string.help)
+      SButton(R.string.help).onClick(showHelp)
       SButton(R.string.stats)
     } padding 20.dip
   }
 
   onStart {
     init
-    showHelpOnFirstUse
+    showHelp
     askToRate
   }
 

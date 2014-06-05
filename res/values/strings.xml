@@ -4,5 +4,12 @@
 	<string name="help">Instructions</string>
 	<string name="settings">Settings</string>
 	<string name="stats">Statistics</string>
+
+
+
+	<string name="help_text"><![CDATA[<b>Goal</b> <br />You will be shown a series of cards with a pair of words on them in quick succession. Your task is to try and memorize the pair in the limited time. After you see all the cards in the set, you will have a couple of seconds to make sure you memorized the cards. Afterwards, you will be shown the same (but shuffled) series of cards again, but with one of the pair of the words missing. Your task is to fill in the missing word in a limited time. ]]></string>
+    <string name="help_begin">Want to give it a shot?</string>
+    <string name="help_begin_button">Sure!</string>
+
 	<string name="app_name">Mnemonix</string>
 </resources>

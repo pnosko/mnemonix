@@ -10,6 +10,8 @@ class RunBatch extends SActivity {
   var current = ("One", "Two")
 
 
+
+
   onCreate {
     contentView = new SVerticalLayout {
       STextView(index.toString)
