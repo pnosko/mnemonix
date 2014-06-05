@@ -11,5 +11,7 @@
     <string name="help_begin">Want to give it a shot?</string>
     <string name="help_begin_button">Sure!</string>
 
+    <string name="card_skip">Skip</string>
+
 	<string name="app_name">Mnemonix</string>
 </resources>
