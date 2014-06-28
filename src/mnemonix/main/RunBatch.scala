@@ -5,24 +5,24 @@ import mnemonix.components._
 import scala.language.postfixOps
 
 class RunBatch extends SActivity {
-  val batch = Batch.create
+//  val batch = Batch.create
   var current = ("One", "Two")
-
-  val ticker: Ticker = Ticker.create(Preferences())
-
-  var progressBar: SProgressBar = _
-
-  def init {
-    ticker.progress.subscribe(updateTimeProgress(_))
-  }
-
-  def updateTimeProgress(portion: Double) {
-    this.progressBar.setProgress((portion * 100).toInt)
-  }
-
-  def skipToNext {
-    this.ticker.skip
-  }
+//
+//  val ticker: Ticker = Ticker.create(Preferences())
+//
+//  var progressBar: SProgressBar = _
+//
+//  def init {
+//    ticker.progress.subscribe(updateTimeProgress(_))
+//  }
+//
+//  def updateTimeProgress(portion: Double) {
+//    this.progressBar.setProgress((portion * 100).toInt)
+//  }
+//
+//  def skipToNext {
+//    this.ticker.skip
+//  }
 
   onCreate {
     contentView = new SVerticalLayout {
@@ -30,10 +30,8 @@ class RunBatch extends SActivity {
 
       STextView(current._1)
       STextView(current._2)
-      progressBar = SProgressBar()
-      SButton(R.string.card_skip).onClick(skipToNext)
+      SProgressBar()
+      SButton(R.string.card_skip)
     }  padding 20.dip
-
-    init
   }
 }
